@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOCH Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .background {
+            background-color: rgb(141, 141, 141);
+            position: relative;
+            bottom: 230px;
+            height: 600px;
+
+        }
+
+        .luv {
+            font-size: 14em;
+            color: grey;
+            text-align: center;
+            margin-right: 20px;
+            margin-top: 250px;
+            position: relative;
+            top: 140px;
+        }
+
+        .header {
+            background-color: white;
+
+        }
+
+        .logo {
+            color: #4b0082;
+            font-weight: 500;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .logo h2 {
+            text-decoration: underline;
+            font-size: 45px;
+            margin-left: 65px;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .logo p {
+            font-size: 20px;
+            margin-left: 65px;
+            margin-bottom: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;
+            bottom: 15px;
+
+        }
+
+        .logo img {
+            position: relative;
+            top: 40px;
+        }
+
+        .nav {
+            font-size: 20px;
+            text-decoration: none;
+            color: #4b0082;
+        }
+
+        .nav a {
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .nav a:hover {
+            color: rgb(16, 52, 212);
+        }
+
+        .abc {
+            position: relative;
+            bottom: 60px;
+            left: 800px;
+        }
+
+        .bcd {
+            position: relative;
+            bottom: 60px;
+            left: 800px;
+        }
+
+        .cde {
+            position: relative;
+            bottom: 60px;
+            left: 800px;
+        }
+
+        .def {
+            position: relative;
+            bottom: 60px;
+            left: 800px;
+        }
+
+        .efg {
+            position: relative;
+            bottom: 60px;
+            left: 800px;
+        }
+
+        .fgh {
+
+            position: relative;
+            bottom: 60px;
+            left: 800px;
+        }
+
+        .ghi {
+            position: relative;
+            left: 23px;
+            top: 5px;
+        }
+
+        .gradient {
+            height: 13px;
+            background: linear-gradient(to right, rgb(56, 177, 224), orange);
+            position: relative;
+            top: 20px;
+        }
+
+        .bnav {
+            background-color: #4b0082;
+            color: white;
+            position: relative;
+            top: 20px;
+            width: 100%;
+            height: 130px;
+        }
+
+        .bnav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 23px;
+            font-size: 16px;
+
+        }
+
+        .bnav ul {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .bnav ul li {
+            padding: 8px;
+            padding-top: 50px;
+            position: relative;
+        }
+
+        .bnav ul li:hover {
+            border-bottom: 5px solid orange;
+        }
+
+        .arrow {
+            border: none;
+            background-color: rgb(141, 141, 141);
+            color: rgb(196, 193, 193);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 40px;
+            font-weight: 800;
+            position: relative;
+            left: 140px;
+
+        }
+
+        .aarrow {
+            border: none;
+            background-color: rgb(141, 141, 141);
+            color: rgb(196, 193, 193);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 40px;
+            font-weight: 800;
+            position: relative;
+            left: 1330px;
+        }
+
+        .arrow:hover {
+            background-color: rgba(80, 79, 79, 0.85);
+        }
+
+        .aarrow:hover {
+            background-color: rgba(80, 79, 79, 0.85);
+        }
+
+        .nnav {
+            position: relative;
+            left: 1086px;
+            background-color: transparent;
+            color: orange;
+            border: 2px solid orange;
+            padding: 14px;
+            cursor: pointer;
+            width: 100px;
+            font-size: 15px;
+            padding-top: 20px;
+        }
+
+        .nnav:hover {
+            background-color: rgb(255, 153, 0);
+            color: #4B0082;
+        }
+
+        .mnav {
+            position: relative;
+            left: 1320px;
+            padding: 15px;
+            padding-bottom: 33px;
+            bottom: 70px;
+            width: 200px;
+            border-radius: 4px;
+            text-align: left;
+            font-size: 15px;
+            outline: none;
+
+        }
+
+        .section {
+            display: flex;
+            position: relative;
+            bottom: 235px;
+            justify-content: center;
+            padding: 50px 40px;
+            background-color: #fff;
+
+
+        }
+
+        .abcd {
+            background-color: #aaa;
+            display: flex;
+
+        }
+
+        .welcom {
+            background: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 40px;
+            width: 550px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+
+        .welcom h2 {
+            background: #4B0082;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .welcomc {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .welcomec img {
+            width: 150px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .tex p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #4B0082;
+            text-decoration: underline;
+        }
+
+        .foot {
+            background-color: #4B0082;
+            color: white;
+            padding: 30px 20px 10px 20px;
+            position: relative;
+            bottom: 250px;
+        }
+
+        .contain {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            flex: 1 1 250px;
+            margin: 10px;
+        }
+
+        .column h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .column a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .column ul li {
+            margin-bottom: 6px;
+        }
+
+        .fobottom {
+            text-align: center;
+            border-top: 1px solid #aaa;
+            padding-top: 15px;
+        }
+
+        .fobottom img {
+            width: 25px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        .icon a img {
+            width: 25px;
+            margin: 0 5px;
+
+        }
+
+        .icon a {
+            width: 25px;
+            margin: 0 5px;
+            color: #ccc;
+
+        }
+
+        .link a {
+            color: #ccc;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://placehold.co/50x50/" alt="UOCH" style="vertical-align: middle; height: 60px;">
+            <h2>University of Chitral</h2>
+            <p>BECOME WHAT YOU WANT TO BE</p>
+        </div>
+        <div class="nav">
+            <a href="" class="abc">HEC-Digital-library</a>
+            <a href="" class="bcd">TURNTIN</a>
+            <a href="" class="cde">EMAIL</a>
+            <a href="" class="def">JOBS</a>
+            <a href="" class="efg">TENDERS</a>
+            <a href="" class="fgh">DOWNLOADS</a>
+            <a href="" class="ghi">ONLINE-ADMISSIONS</a>
+        </div>
+        <div class="gradient">
+        </div>
+        <div class="bnav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About ▼</a></li>
+                <li><a href="">Administration ▼</a></li>
+                <li><a href="">Admissions ▼</a></li>
+                <li><a href="">Academics ▼</a></li>
+                <li><a href="">Examinations ▼</a></li>
+                <li><a href="">YDC ▼</a></li>
+                <li><a href="">Projects ▼</a></li>
+                <li><a href="">Budgets</a></li>
+                <li><a href="">Research ▼</a></li>
+            </ul>
+            <input type="text" placeholder="Search" class="mnav">
+            <button class="nnav">Search</button>
+        </div>
+    </header>
+
+    <div class="background">
+        <p class="luv">UOCH</p>
+        <button class="arrow"> ❮ </button>
+        <button class="aarrow">❯ </button>
+    </div>
+
+    <section class="section">
+        <div class="abcd">
+            <div class="welcom">
+                <h2>Welcome to the University of Chitral</h2>
+                <div class="welcomc">
+                    <img src="campus.jpg" alt="Campus Image">
+                    <div class="tex">
+                        <h3><em>Generate and Disseminate Knowledge</em></h3>
+                        <p>To serve the society by nurturing the students with a delicate intellectual, cultural,
+                            ethical,
+                            and humane sensitivity through a pleasant blend of ancient and modern wisdom; to foster a
+                            scientific temper and to promote professional and technological expertise.</p>
+                        <p>Pivotal to this vision is a commitment to contributing in local, national and international
+                            development, concomitantly adhering to the dictates of our social ethics, traditions and
+                            environment.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="welcom">
+                <h2>Vice Chancellor’s Message</h2>
+                <div class="welcomc">
+                    <img src="vc.jpg" alt="Vice Chancellor">
+                    <div class="tex">
+                        <p>Welcome to the University of Chitral—a newly established public sector university in Khyber
+                            Pakhtunkhwa, Pakistan. Our mission goes beyond simply classroom teaching and basic
+                            research—we
+                            strive to provide an academic environment that encourages dialogue, critical thinking,
+                            innovation, and respect for diversity and inclusiveness.</p>
+                        <p>Our faculty is committed to excellence in teaching, research, and community
+                            engagement—bringing
+                            real-world experience into the classroom. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="contain">
+            <div class="column">
+                <h2>University of Chitral</h2>
+                <p>Seen Lasht Garam Chashma Road Chitral (Lower)</p>
+                <img src="https://placehold.co/123x50">
+            </div>
+            <div class="column">
+                <h2>Contact us</h2>
+                <p>+92-943-415001 (PS to VC)</p>
+                <p>Visit our Campus:</p>
+                <p>Seenlasht Garam Chashma Road, Chitral (Lower)</p>
+            </div>
+            <div class="column">
+                <h2>About Us</h2>
+                <ul>
+                    <li><a href="">Faculties</a></li>
+                    <li><a href="">Centres and Institutes</a></li>
+                    <li><a href="">Campus Location</a></li>
+                    <li><a href="">Map and Location</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fobottom">
+            <p>
+                <img src="https://placehold.co/30x30/" alt="University Logo"
+                    style="height:30px; vertical-align: middle;">
+                University of Chitral | Become What You Want To Be
+            </p>
+            <div class="icon">
+                <a href=""><img src="facebook.png" alt="Facebook"></a>
+                <a href=""><img src="twitter.png" alt="Twitter"></a>
+                <a href=""><img src="youtube.png" alt="YouTube"></a>
+            </div>
+            <p style="text-align: center; position: relative;
+            top:10px;">
+                Disclaimer | Privacy Policy | Accessibility
+                Website Feedback© 2025 University of Chitral | Designed by IT Department, University of Chitral
+            </p>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
